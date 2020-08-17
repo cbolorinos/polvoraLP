@@ -569,8 +569,6 @@ pre code {
 
 .container-fluid, .container-xl, .container-lg, .container-md, .container-sm {
   width: 100%;
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
   margin-right: auto;
   margin-left: auto;
 }
@@ -3992,7 +3990,7 @@ input[type=button].btn-block {
 .navbar .container-xl {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
 }
 .navbar-brand {
@@ -6095,7 +6093,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #1abc9c !important;
+  background-color: #2f5e7a;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -6105,7 +6103,7 @@ button.bg-primary:focus {
 }
 
 .bg-secondary {
-  background-color: #2c3e50 !important;
+  background-color: #ffffff !important;
 }
 
 a.bg-secondary:hover, a.bg-secondary:focus,
@@ -8827,9 +8825,7 @@ button.bg-dark:focus {
   }
 
   .mr-lg-1,
-.mx-lg-1 {
-    margin-right: 0.25rem !important;
-  }
+
 
   .mb-lg-1,
 .my-lg-1 {
@@ -8837,9 +8833,7 @@ button.bg-dark:focus {
   }
 
   .ml-lg-1,
-.mx-lg-1 {
-    margin-left: 0.25rem !important;
-  }
+
 
   .m-lg-2 {
     margin: 0.5rem !important;
@@ -10084,11 +10078,21 @@ h3 {
 #mainNav .navbar-nav {
   margin-top: 1rem;
 }
+#mainNav .navbar-nav li.nav-item {
+  background-color: #557b91;
+}
+.red {
+  background-color: #ff0000!important;
+}
 #mainNav .navbar-nav li.nav-item a.nav-link {
   color: #fff;
+  font-size: 11px;
 }
-#mainNav .navbar-nav li.nav-item a.nav-link:hover {
-  color: #1abc9c;
+#mainNav .navbar-nav li.nav-item:hover {
+  background-color: #2f424e;
+}
+.red:hover {
+  background-color: #cc0000!important;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
   color: #fff;
@@ -10113,14 +10117,6 @@ h3 {
   }
   #mainNav .navbar-nav {
     margin-top: 0;
-  }
-  #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
-    color: #fff;
-    background: #1abc9c;
-  }
-  #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
-    color: #fff;
-    background: #1abc9c;
   }
 
   #mainNav.navbar-shrink {
@@ -10148,8 +10144,8 @@ h3 {
 
 @media (min-width: 992px) {
   .masthead {
-    padding-top: calc(6rem + 104px);
-    padding-bottom: 6rem;
+    padding-top: 152px;
+    padding-bottom: 0px;
   }
   .masthead .masthead-heading {
     font-size: 4rem;
