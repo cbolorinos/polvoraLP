@@ -5979,7 +5979,6 @@ a.close.disabled {
   background-clip: padding-box;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
-  opacity: 0.5;
   transition: opacity 0.6s ease;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -5988,7 +5987,7 @@ a.close.disabled {
   }
 }
 .carousel-indicators .active {
-  opacity: 1;
+  background-color: #cff245;
 }
 
 .carousel-caption {
@@ -10077,6 +10076,7 @@ h3 {
   font-size: 14px;
 }
 #mission{
+  padding:8rem 8rem 8rem 8rem;
   background-image: url("bg.jpg");
   background-color: #cccccc;
   background-size: cover;
@@ -10387,9 +10387,14 @@ form .row:first-child .floating-label-form-group {
 }
 
 #clients{
-  padding:6rem;
+  padding:8rem 8rem 0rem 8rem;
 }
-
+#leaders{
+  padding:8rem 8rem 4rem 8rem;
+}
+#works{
+  padding:8rem 8rem 4rem 8rem;
+}
 @media ( max-width: 60em ) {
   #logo-slider .logo-slider-item {
     width: 33.33%;
