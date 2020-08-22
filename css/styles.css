@@ -10386,7 +10386,9 @@ form .row:first-child .floating-label-form-group {
   overflow: hidden;
 }
 
-
+#clients{
+  padding:6rem;
+}
 
 @media ( max-width: 60em ) {
   #logo-slider .logo-slider-item {
