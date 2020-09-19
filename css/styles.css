@@ -4176,6 +4176,7 @@ input[type=button].btn-block {
   .navbar-expand-lg .navbar-collapse {
     display: flex !important;
     flex-basis: auto;
+    margin-bottom:29px;
   }
   .navbar-expand-lg .navbar-toggler {
     display: none;
@@ -5863,7 +5864,12 @@ a.close.disabled {
 .carousel-item-prev {
   display: block;
 }
-
+.carousel-item img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
 .carousel-item-next:not(.carousel-item-left),
 .active.carousel-item-right {
   transform: translateX(100%);
@@ -5938,7 +5944,7 @@ a.close.disabled {
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  display: inline-block;
+  display: none;
   width: 20px;
   height: 20px;
   background: no-repeat 50%/100% 100%;
@@ -5993,13 +5999,16 @@ a.close.disabled {
 .carousel-caption {
   position: absolute;
   right: 15%;
-  bottom: 50px;
+  bottom: 60px;
   left: 15%;
   z-index: 10;
   padding-top: 20px;
   padding-bottom: 20px;
   color: #fff;
   text-align: center;
+}
+.carousel-caption h5{
+  font-weight: normal;
 }
 
 @-webkit-keyframes spinner-border {
@@ -10064,16 +10073,20 @@ h3 {
   background-color: rgba(33, 37, 41, 0.5);
   line-height: 3.1rem;
 }
-#services{
-  padding:8rem 8rem 4rem 8rem;
+.services{
+  padding:0 1.5rem;
 }
 .services h4{
-  padding:10px 0;
+  padding:10px;
   color:#557b91;
+  width:70%;
 }
 .services p{
-  padding:1.5rem;
   font-size: 14px;
+  padding: 10px 0;
+}
+.services img{
+  max-height: 56px;
 }
 #mission{
   padding:8rem 8rem 8rem 8rem;
@@ -10102,7 +10115,7 @@ h3 {
 }
 #mainNav .navbar-nav li.nav-item a.nav-link {
   color: #fff;
-  font-size: 11px;
+  font-size: 13px;
 }
 #mainNav .navbar-nav li.nav-item:hover {
   background-color: #2f424e;
