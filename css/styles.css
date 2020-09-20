@@ -2478,7 +2478,7 @@ fieldset:disabled a.btn {
 }
 .btn-primary:focus, .btn-primary.focus {
   color: #fff;
-  background-color: #159a80;
+  background-color: #557b91;
   border-color: #148f77;
   box-shadow: 0 0 0 0.2rem rgba(60, 198, 171, 0.5);
 }
@@ -5998,7 +5998,7 @@ a.close.disabled {
 .carousel-caption {
   position: absolute;
   right: 15%;
-  bottom: 32%;
+  bottom: 30%;
   left: 15%;
   z-index: 10;
   padding-top: 20px;
@@ -6008,6 +6008,9 @@ a.close.disabled {
 }
 .carousel-caption h5{
   font-weight: normal;
+}
+.carousel-caption h1{
+  font-size: 3em;
 }
 
 @-webkit-keyframes spinner-border {
